@@ -1,0 +1,15 @@
+[0m[[0minfo[0m] [0mPackaging /Users/dhruv/projects/KafkaProducer/target/scala-2.10/kafka-producer_2.10-0.1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	KafkaProducer$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaProducer/target/scala-2.10/classes/KafkaProducer$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	KafkaProducer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaProducer/target/scala-2.10/classes/KafkaProducer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	KafkaProducer$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaProducer/target/scala-2.10/classes/KafkaProducer$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	KafkaProducer$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaProducer/target/scala-2.10/classes/KafkaProducer$.class[0m
+[0m[[0mdebug[0m] [0m	KafkaProducer$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaProducer/target/scala-2.10/classes/KafkaProducer$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	KafkaProducer.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaProducer/target/scala-2.10/classes/KafkaProducer.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

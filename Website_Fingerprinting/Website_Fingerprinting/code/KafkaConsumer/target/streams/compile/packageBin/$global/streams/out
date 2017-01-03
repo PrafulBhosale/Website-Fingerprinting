@@ -1,0 +1,29 @@
+[0m[[0minfo[0m] [0mPackaging /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/kafka-naive-bayes_2.10-0.1.0.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer$$anonfun$3$$anonfun$apply$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer$$anonfun$3$$anonfun$apply$1.class[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer$$anonfun$main$1.class[0m
+[0m[[0mdebug[0m] [0m	modelGenerator$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/modelGenerator$$anonfun$1.class[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer$$anonfun$2.class[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer$$anonfun$3.class[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer.class[0m
+[0m[[0mdebug[0m] [0m	modelGenerator$$anonfun$1$$anonfun$apply$1.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/modelGenerator$$anonfun$1$$anonfun$apply$1.class[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer$.class[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer$$anonfun$main$1$$anonfun$apply$2.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer$$anonfun$main$1$$anonfun$apply$2.class[0m
+[0m[[0mdebug[0m] [0m	KafkaConsumer$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/KafkaConsumer$$anonfun$4.class[0m
+[0m[[0mdebug[0m] [0m	modelGenerator.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/modelGenerator.class[0m
+[0m[[0mdebug[0m] [0m	modelGenerator$.class[0m
+[0m[[0mdebug[0m] [0m	  /Users/dhruv/projects/KafkaNaiveBayes/target/scala-2.10/classes/modelGenerator$.class[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

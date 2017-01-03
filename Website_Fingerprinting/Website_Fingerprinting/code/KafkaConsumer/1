@@ -1,0 +1,80 @@
+import org.apache.spark.mllib.classification.{NaiveBayes, NaiveBayesModel}
+import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.mllib.regression.LabeledPoint
+import org.apache.spark.SparkContext
+import org.apache.spark.streaming._
+import org.apache.spark.streaming.StreamingContext._
+import org.apache.spark.streaming.kafka._
+import org.apache.spark.SparkConf
+import java.lang._
+import java.io.File
+
+/**
+ * @author dhruv
+ */
+object KafkaConsumer {
+  
+  def main(args: Array[String]) {
+    val sparkConf=new SparkConf().setAppName("KafkaNaiveBayes")
+    sparkConf.setMaster("local[2]")
+    val sc=new SparkContext(sparkConf)
+    val ssc = new StreamingContext(sc,Seconds(1))
+    ssc.checkpoint("checkpoint")
+
+    val Array(zkQuorum, group, topics, numThreads) = args
+    val data=sc.wholeTextFiles("/Users/dhruv/projects/WebsiteFingerPrinting/real_data")
+    /*
+     *val data2=sc.textFile("/Users/dhruv/projects/WebsiteFingerPrinting/real_data/3rd")
+     *val data=sc.union(data1,data2)
+     */
+    val topicMap=topics.split(",").map((_,numThreads.toInt)).toMap
+    //val model = NaiveBayesModel.load(sc, "myModelPath")
+
+    //var fs:Array[File]=new java.io.File("/Users/dhruv/projects/WebsiteFingerPrinting/real_data").listFiles.filter(x => !x.getName.contains("DS_Store")).flatMap { x => x.listFiles() }
+    //val messages = fs.flatMap { x => scala.io.Source.fromFile(x.getAbsolutePath).getLines() }
+ 
+    //val lines = KafkaUtils.createStream(ssc, zkQuorum, group,  topicMap).map(_._2).filter(x => x.split(" ").size!=905)
+    
+//    lines.foreach(x => x.collect().foreach(x=>println(x._2.split(" ").size)))
+    
+    
+//    lines.window(Seconds(10),Seconds(10)).saveAsTextFiles("/Users/dhruv/projects/KafkaNaiveBayes/output")
+
+    
+     val parsedData = data.map { line =>
+       val parts = line.split(',')
+       LabeledPoint(parts(0).toCharArray()(7).toDouble, Vectors.dense(parts(1).split(' ').map(_.toDouble)))
+     }
+     // Split data into training (60%) and test (40%).
+     
+//   val splits = parsedData.randomSplit(Array(0.4, 0.6), seed = 11L)
+//   val training = splits(0)
+//   val test = splits(1)
+//
+    val model = NaiveBayes.train(parsedData, lambda = 1.0, modelType = "multinomial")
+    model.save(sc, "myModelPath")
+//
+
+//     val predictionAndLabel = parsedData.map(p => (model.predict(p.features), p.label))
+//     predictionAndLabel.foreach(x=>x.collect().foreach(x=>println(x._1+"\t"+x._2)))
+
+//     predictionAndLabel.window(Seconds(10),Seconds(10)).saveAsTextFiles("/Users/dhruv/projects/KafkaNaiveBayes/output")
+     //predictionAndLabel.count().foreach(y=>y.collect.filter(_!=0).foreach(y=>predictionAndLabel.filter(x => x._1 == x._2).count().foreach(x=>println(x.collect()(0).toDouble/y))))
+//    {
+//        predictionAndLabel.filter(x => x._1 == x._2).count().foreach(x=>{predictionAndLabel.count().foreach(y=>print(x.collect()._1.toDouble/y.collect()._1.toDouble)})
+//    }
+ //   println("test count: " + test.count())
+//   println("train count: " + training.count())
+//   println("Accuracy: " + accuracy)
+//
+   // Save and load model
+
+    ssc.start()
+    ssc.awaitTermination()
+    
+
+
+
+  }
+
+}

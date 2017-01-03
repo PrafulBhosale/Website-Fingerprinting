@@ -1,0 +1,9 @@
+~run
+run localhost:9092 mytpoic
+run localhost:9092 mytopic
+exit
+~run
+run localhost:2181 my-group mytopic 1
+run localhost:2181 my-group mytopic 2
+exit
+run localhost:2181 my-group mytopic 2
